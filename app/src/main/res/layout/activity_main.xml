@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcolor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="title"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:text="artist"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/covr"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@null"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonR"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:backgroundTint="#00FFFFFF"
+                android:backgroundTintMode="@null"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                app:srcCompat="@drawable/rewind" />
+
+            <ImageButton
+                android:id="@+id/imageButtonS"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:backgroundTint="#00FFFFFF"
+                android:backgroundTintMode="@null"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                app:srcCompat="@drawable/play" />
+
+            <ImageButton
+                android:id="@+id/imageButtonStop"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:backgroundTint="#00FFFFFF"
+                android:backgroundTintMode="@null"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                app:srcCompat="@drawable/stop" />
+
+            <ImageButton
+                android:id="@+id/imageButtonN"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:backgroundTint="#00FFFFFF"
+                android:backgroundTintMode="@null"
+                android:maxWidth="80dp"
+                android:maxHeight="80dp"
+                app:srcCompat="@drawable/fastforward" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
